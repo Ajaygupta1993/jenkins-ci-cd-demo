@@ -12,7 +12,7 @@ public class JenkinsPipeLineApplication {
 	
 	@GetMapping("/greetings/{name}")
 	public String greetings(@PathVariable String name) {
-		
+		System.out.println("Logger Added");
 		return "Hello " + name +  "Congrats successfully deployed in CI CD";
 	}
 
